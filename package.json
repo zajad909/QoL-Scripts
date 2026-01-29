@@ -12,13 +12,22 @@
   },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "format:check": "prettier --check \"scripts/**/*.ts\"",
+    "format:fix": "prettier --write \"scripts/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-password-ts": "node scripts/RandomPassphraseGenerator.ts",
-    "generate-password-ps1": "powershell scripts/RandomPassphraseGenerator.ps1",
-    "generate-password-bash": "bash scripts/RandomPassphraseGenerator.sh",
-    "generate-password-py": "python scripts/RandomPassphraseGenerator.py"
+    "generate:ts": "NODE_OPTIONS='--no-warnings' ts-node --esm scripts/passphrase-generator.ts",
+    "generate:ps1": "powershell scripts/passphrase-generator.ps1",
+    "generate:bash": "bash scripts/passphrase-generator.sh",
+    "generate:py": "python scripts/passphrase-generator.py"
+  },
+  "dependencies": {
+    "@types/node": "^25.1.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
   }
 }
