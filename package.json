@@ -1,0 +1,24 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "description": "Password Generator Script",
+  "homepage": "https://github.com/Zajad993/password-generator#readme",
+  "bugs": {
+    "url": "https://github.com/Zajad993/password-generator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zajad993/password-generator.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-password-ts": "node scripts/RandomPassphraseGenerator.ts",
+    "generate-password-ps1": "powershell scripts/RandomPassphraseGenerator.ps1",
+    "generate-password-bash": "bash scripts/RandomPassphraseGenerator.sh",
+    "generate-password-py": "python scripts/RandomPassphraseGenerator.py"
+  }
+}
