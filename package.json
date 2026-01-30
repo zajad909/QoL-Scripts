@@ -15,19 +15,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "format:check": "prettier --check \"scripts/**/*.ts\"",
-    "format:fix": "prettier --write \"scripts/**/*.ts\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate:ts": "NODE_OPTIONS='--no-warnings' ts-node --esm scripts/passphrase-generator.ts",
-    "generate:ps1": "powershell scripts/passphrase-generator.ps1",
-    "generate:bash": "bash scripts/passphrase-generator.sh",
-    "generate:py": "python scripts/passphrase-generator.py"
+    "format:check": "prettier --check \"password-generator/**/*.ts\" \"uptime/**/*.ts\"",
+    "format:fix": "prettier --write \"password-generator/**/*.ts\" \"uptime/**/*.ts\""
   },
   "dependencies": {
-    "@types/node": "^25.1.0"
+    "@types/node": "^25.1.0",
+    "prettier-plugin-organize-imports": "^4.3.0"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2",
+    "prettier": "^3.5.3",
     "typescript": "^5.0.0"
   }
 }
