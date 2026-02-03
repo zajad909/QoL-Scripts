@@ -4,7 +4,6 @@
 # @raycast.schemaVersion 1
 # @raycast.title Password-Gen
 # @raycast.mode inline
-# @raycast.refreshTime 60s
 
 # Optional parameters:
 # @raycast.icon 🔒

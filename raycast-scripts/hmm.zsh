@@ -4,7 +4,6 @@
 # @raycast.schemaVersion 1
 # @raycast.title Uptime - v2
 # @raycast.mode inline
-# @raycast.refreshTime 60s
 
 # Optional parameters:
 # @raycast.icon 🤖
