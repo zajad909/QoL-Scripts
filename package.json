@@ -1,22 +1,22 @@
 {
-  "name": "password-generator",
+  "name": "quick-tools",
   "version": "1.0.0",
-  "description": "Password Generator Script",
-  "homepage": "https://github.com/Zajad993/password-generator#readme",
+  "description": "A collection of quick tools for various tasks",
+  "homepage": "https://github.com/Zajad909/QoL-Scripts#readme",
   "bugs": {
-    "url": "https://github.com/Zajad993/password-generator/issues"
+    "url": "https://github.com/zajad909/QoL-Scripts/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zajad993/password-generator.git"
+    "url": "git+https://github.com/Zajad909/QoL-Scripts.git"
   },
   "license": "ISC",
-  "author": "",
+  "author": "Dom Clarke - zajad909",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "format:check": "prettier --check \"password-generator/**/*.ts\" \"uptime/**/*.ts\"",
-    "format:fix": "prettier --write \"password-generator/**/*.ts\" \"uptime/**/*.ts\""
+    "format:check": "prettier --check \"QoL-Scripts/**/*.ts\" \"uptime/**/*.ts\"",
+    "format:fix": "prettier --write \"QoL-Scripts/**/*.ts\" \"uptime/**/*.ts\""
   },
   "dependencies": {
     "@types/node": "^25.1.0",
