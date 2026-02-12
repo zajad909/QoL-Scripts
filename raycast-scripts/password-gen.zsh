@@ -1,8 +1,8 @@
-#!/bin/bash
+-#!/bin/bash
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Password-Gen
+# @raycast.title Gen-Pass
 # @raycast.mode inline
 
 # Optional parameters:
