@@ -1,4 +1,4 @@
--#!/bin/bash
+#!/usr/bin/env zsh
 
 # Required parameters:
 # @raycast.schemaVersion 1
@@ -13,7 +13,8 @@
 # @raycast.author Dominic Clarke
 # @raycast.authorURL https://raycast.com/dominic_clarke
 
-source ../password-generator/passphrase-generator.zsh;
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]:-${(%):-%x}}")" && pwd)"
+source "${SCRIPT_DIR}/../password-generator/passphrase-generator.zsh"
 
 passwordGen | tee >(pbcopy)
 
